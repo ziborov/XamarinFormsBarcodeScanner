@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InfoplusTest2.Views.ItemDetailPage"
+             Title="{Binding Title}">
+    <ScrollView>
+        <StackLayout Spacing="20" Padding="15">
+            <Label Text="Product name:" FontSize="Medium" />
+            <Label Text="{Binding Item.Text}" FontSize="Small"/>
+            <Label Text="Product Description:" FontSize="Medium" />
+            <Label Text="{Binding Item.Description}" FontSize="Small"/>
+            <Label Text="Product Code:" FontSize="Medium" />
+            <Label Text="{Binding Item.CodeString}" FontSize="Small"/>
+            <Label Text="Product picture URL :" FontSize="Medium" />
+            <Label Text="{Binding Item.PictureURL}" FontSize="Small"/>
+            <Label Text="Picture :" FontSize="Medium" />
+            <Image Source="{Binding Item.PictureURL}" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

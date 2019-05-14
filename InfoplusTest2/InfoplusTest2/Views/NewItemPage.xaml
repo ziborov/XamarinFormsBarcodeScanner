@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InfoplusTest2.Views.NewItemPage"
+             Title="New Item">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Save" Clicked="Save_Clicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="15">
+            <Label Text="Product:" FontSize="Medium" />
+            <Entry Text="{Binding Item.Text}" FontSize="Small" />
+            <Label Text="Description:" FontSize="Medium" />
+            <Editor Text="{Binding Item.Description}" FontSize="Small"  />
+            <Label Text="Code string:" FontSize="Medium" />
+            <Editor Text="{Binding Item.CodeString}" FontSize="Small"  />
+            <Label Text="Picture URL:" FontSize="Medium" />
+            <Editor Text="{Binding Item.PictureURL}" FontSize="Small"  />
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
